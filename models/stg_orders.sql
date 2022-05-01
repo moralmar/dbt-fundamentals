@@ -1,4 +1,4 @@
-orders as (
+with orders as (
 
     select
         id as order_id,
@@ -8,6 +8,6 @@ orders as (
 
     from `dbt-tutorial`.jaffle_shop.orders
 
-),
+)
 
 select * from orders
